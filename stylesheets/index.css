@@ -1,0 +1,108 @@
+main {
+  margin-top: 55px;
+}
+
+.character-rarity-4,
+.character-rarity-5 {
+  background-size: contain !important;
+  background-position: 50% !important;
+}
+
+.character-rarity-4 {
+  background-image: url(https://rerollcdn.com/STARRAIL/Rarity/4_sm.png) !important;
+}
+
+.character-rarity-5 {
+  background-image: url(https://rerollcdn.com/STARRAIL/Rarity/5_sm.png) !important;
+}
+
+.relic-rarity-2,
+.relic-rarity-3,
+.relic-rarity-4,
+.relic-rarity-5 {
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.relic-rarity-2 i {
+  color: #61CF93;
+}
+
+.relic-rarity-3 i {
+  color: #4E7BBE;
+}
+
+.relic-rarity-4 i {
+  color: #8A5FCC;
+}
+
+.relic-rarity-5 i {
+  color: #C9A36A;
+}
+
+.relic-level,
+.relic-score {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.relic-grade-S {
+  color: #0277BD;
+}
+
+.relic-grade-A {
+  color: #2E7D32;
+}
+
+.relic-grade-B {
+  color: #7CB342;
+}
+
+.relic-grade-C {
+  color: #FBC02D;
+}
+
+.relic-grade-D {
+  color: #EF6C00;
+}
+
+.relic-grade-F {
+  color: #B71C1C;
+}
+
+.character-path,
+.character-element {
+  bottom: 10px;
+  width: 115px;
+  height: 31px;
+}
+
+.character-path {
+  left: 10px;
+}
+
+.character-element {
+  right: 10px;
+}
+
+.character-path img,
+.character-element img {
+  height: 20px;
+  margin-top: -2px;
+}
+
+.character-path span,
+.character-element span {
+  padding-left: 4px;
+  line-height: 23px;
+  font-size: 11px;
+}
+
+.main-stat,
+.sub-stat {
+  font-size: 12px;
+}
+
+.main-stat {
+  font-weight: bold;
+}
