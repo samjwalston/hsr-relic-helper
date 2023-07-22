@@ -1,5 +1,4 @@
 const Page = (function() {
-  let data;
   let fileInput;
   let importButton;
 
@@ -16,7 +15,7 @@ const Page = (function() {
   }
 
   function loadData() {
-    data = (Storage.load() || {});
+    let data = (Storage.load() || {});
 
     return {
       selectedCharacterName: '',

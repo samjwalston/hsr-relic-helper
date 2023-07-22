@@ -14,7 +14,7 @@ const Storage = (function() {
       return 0;
     });
 
-    data.relics = data.relics.map((relic) => Relic.format(relic, data.characters));
+    data.relics = data.relics.map((relic, index) => Relic.format(relic, index, data.characters));
     data.characters = data.characters.map((character) => Character.addRelics(character, data.relics));
 
     return data;

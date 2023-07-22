@@ -199,7 +199,7 @@ const Relic = (function() {
     return (Math.round((50 / max * value) * 10) / 10);
   }
 
-  function formatRelics(relic, characters) {
+  function formatRelics(relic, index, characters) {
     if (relic.location === 'TrailblazerPreservation') {
       relic.location = 'Trailblazer (Fire)';
     } else if (relic.location === 'TrailblazerDestruction') {
@@ -237,6 +237,7 @@ const Relic = (function() {
       relic.mainStatValue = [(Math.floor((mainStatValue.base + (relic.level * mainStatValue.per)) * 10) / 10), '%'].join('');
     }
 
+    relic.id = (index + 1);
     relic.characters = {};
 
     characters.forEach(function(character) {

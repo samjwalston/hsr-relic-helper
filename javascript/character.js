@@ -86,16 +86,17 @@ const Character = (function() {
     return character;
   }
 
-  function formatCharacters(character) {
+  function formatCharacters(character, index) {
     if (character.key === 'TrailblazerPreservation') {
       character.key = 'Trailblazer (Fire)';
     } else if (character.key === 'TrailblazerDestruction') {
       character.key = 'Trailblazer (Physical)';
     }
 
-    let statWeights = {statWeights: (characterStatWeights[character.key] || {})};
+    character.id = (index + 1);
+    character.statWeights = (characterStatWeights[character.key] || {});
 
-    return {...character, ...characterInfo[character.key], ...statWeights};
+    return {...character, ...characterInfo[character.key]};
   }
 
 
